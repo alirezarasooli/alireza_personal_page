@@ -1,0 +1,251 @@
+{
+  "$schema": {
+    "description": "Schema for Alireza Rasooli Khorshidi's AI-Native Personal Page Record",
+    "type": "object",
+    "required": ["profile", "courses", "projects", "capabilities", "limits"],
+    "field_visibility": {
+      "public": [
+        "profile.name",
+        "profile.university",
+        "profile.major",
+        "profile.entry_year",
+        "profile.github_username",
+        "courses[*].code",
+        "courses[*].title",
+        "courses[*].semester",
+        "courses[*].status",
+        "courses[*].topics",
+        "projects[*].id",
+        "projects[*].title",
+        "projects[*].course",
+        "projects[*].summary",
+        "projects[*].stack",
+        "projects[*].repo",
+        "projects[*].team_members",
+        "capabilities",
+        "limits"
+      ],
+      "private_never_expose": [
+        "profile.student_id",
+        "profile.email",
+        "profile.phone",
+        "courses[*].grade",
+        "courses[*].class_rank"
+      ]
+    }
+  },
+  "profile": {
+    "name": "Alireza Rasooli Khorshidi (علیرضا رسولی خورشیدی)",
+    "university": "Sharif University of Technology",
+    "major": "Computer Engineering",
+    "entry_year": 1403,
+    "github_username": "alirezarasooli",
+    "student_id": { "value": "403105985", "visibility": "private" },
+    "email": { "value": "alirezarasooli13851394@gmail.com", "visibility": "private" },
+    "phone": { "value": "REDACTED", "visibility": "private" }
+  },
+  "courses": [
+    {
+      "code": "40153",
+      "title": "Fundamentals of Programming (مبانی برنامه‌سازی)",
+      "semester": "1403-1",
+      "status": "Passed",
+      "topics": ["C Programming", "Pointers", "Memory Management", "Terminal UI (ncurses)"],
+      "grade": { "value": 17.1, "visibility": "private" },
+      "visibility": "public"
+    },
+    {
+      "code": "40108",
+      "title": "Computer Workshop (کارگاه کامپیوتر)",
+      "semester": "1403-1",
+      "status": "Passed",
+      "topics": ["Linux", "Git", "Bash Scripting", "Web Basics"],
+      "grade": { "value": 20.0, "visibility": "private" },
+      "visibility": "public"
+    },
+    {
+      "code": "40244",
+      "title": "Advanced Programming (برنامه‌سازی پیشرفته)",
+      "semester": "1403-2",
+      "status": "Passed",
+      "topics": ["Object-Oriented Programming (OOP)", "Java", "Design Patterns", "GUI & Game Development", "Multithreading"],
+      "grade": { "value": 17.1, "visibility": "private" },
+      "visibility": "public"
+    },
+    {
+      "code": "40115",
+      "title": "Discrete Structures (ساختمان‌های گسسته)",
+      "semester": "1403-2",
+      "status": "Passed",
+      "topics": ["Logic", "Graph Theory", "Combinatorics", "Number Theory"],
+      "grade": { "value": 17.0, "visibility": "private" },
+      "visibility": "public"
+    },
+    {
+      "code": "40212",
+      "title": "Logic Circuits (مدارهای منطقی)",
+      "semester": "1403-2",
+      "status": "Passed",
+      "topics": ["Boolean Algebra", "Combinational & Sequential Circuits", "Verilog"],
+      "grade": { "value": 16.0, "visibility": "private" },
+      "visibility": "public"
+    },
+    {
+      "code": "40254",
+      "title": "Data Structures and Algorithms (ساختمان داده‌ها و الگوریتم‌ها)",
+      "semester": "1404-1",
+      "status": "Passed",
+      "topics": ["Trees", "Graphs", "Sorting", "Hashing", "Dynamic Programming"],
+      "grade": { "value": 16.2, "visibility": "private" },
+      "visibility": "public"
+    },
+    {
+      "code": "40126",
+      "title": "Computer Structure and Language (ساختار و زبان کامپیوتر)",
+      "semester": "1404-1",
+      "status": "Passed",
+      "topics": ["Assembly", "Processor Organization", "Memory Hierarchy"],
+      "grade": { "value": 13.5, "visibility": "private" },
+      "visibility": "public"
+    },
+    {
+      "code": "40181",
+      "title": "Engineering Probability and Statistics (آمار و احتمال مهندسی)",
+      "semester": "1404-1",
+      "status": "Passed",
+      "topics": ["Probability Distributions", "Random Variables", "Statistical Inference"],
+      "grade": { "value": 15.9, "visibility": "private" },
+      "visibility": "public"
+    },
+    {
+      "code": "40417",
+      "title": "Artificial Intelligence (هوش مصنوعی)",
+      "semester": "1404-2",
+      "status": "Passed",
+      "topics": ["Search Algorithms", "CSP", "Reinforcement Learning", "Machine Learning Basics", "Bayesian Networks"],
+      "grade": { "value": 15.0, "visibility": "private" },
+      "visibility": "public"
+    },
+    {
+      "code": "40384",
+      "title": "Database Design (طراحی پایگاه داده‌ها)",
+      "semester": "1404-2",
+      "status": "Passed",
+      "topics": ["SQL", "Relational Model", "Normalization", "Transactions"],
+      "grade": { "value": 12.8, "visibility": "private" },
+      "visibility": "public"
+    },
+    {
+      "code": "40323",
+      "title": "Computer Architecture (معماری کامپیوتر)",
+      "semester": "1404-2",
+      "status": "Passed",
+      "topics": ["Pipelining", "Cache", "RISC/MIPS Architecture"],
+      "grade": { "value": 12.0, "visibility": "private" },
+      "visibility": "public"
+    },
+    {
+      "code": "40223",
+      "title": "Digital Systems Design (طراحی سیستم‌های دیجیتال)",
+      "semester": "1404-2",
+      "status": "Passed",
+      "topics": ["FPGA", "Hardware Description Languages", "Digital Design"],
+      "grade": { "value": 13.6, "visibility": "private" },
+      "visibility": "public"
+    },
+    {
+      "code": "40415",
+      "title": "Theory of Languages and Machines (نظریه زبان‌ها و ماشین‌ها)",
+      "semester": "1404-2",
+      "status": "Passed",
+      "topics": ["Automata", "Regular Languages", "Context-Free Grammars", "Turing Machines"],
+      "grade": { "value": 11.2, "visibility": "private" },
+      "visibility": "public"
+    },
+    {
+      "code": "40424",
+      "title": "Operating Systems (سیستم‌های عامل)",
+      "semester": "1405-1",
+      "status": "In Progress",
+      "topics": ["Processes", "Threads", "Concurrency", "Memory Management", "File Systems", "Rust no_std"],
+      "visibility": "public"
+    },
+    {
+      "code": "40443",
+      "title": "Computer Networks (شبکه‌های کامپیوتری)",
+      "semester": "1405-1",
+      "status": "In Progress",
+      "topics": ["TCP/IP", "Routing", "Application Layer", "Network Security"],
+      "visibility": "public"
+    },
+    {
+      "code": "40354",
+      "title": "Algorithm Design (طراحی الگوریتم‌ها)",
+      "semester": "1405-1",
+      "status": "In Progress",
+      "topics": ["Greedy Algorithms", "Divide and Conquer", "Dynamic Programming", "Network Flow", "NP-Completeness"],
+      "visibility": "public"
+    },
+    {
+      "code": "40282",
+      "title": "Linear Algebra (جبر خطی)",
+      "semester": "1405-1",
+      "status": "In Progress",
+      "topics": ["Vector Spaces", "Matrices", "Eigenvalues", "SVD"],
+      "visibility": "public"
+    },
+    {
+      "code": "40327",
+      "title": "Advanced Computer Topics 2 / AI-Native Systems Design (مفاهیم پیشرفته کامپیوتر ۲ / طراحی سیستم‌های AI-Native)",
+      "semester": "1405-1",
+      "status": "In Progress",
+      "topics": ["LLM Integration", "Context Engineering", "Capabilities & Authority", "Explainable AI Systems"],
+      "visibility": "public"
+    }
+  ],
+  "projects": {
+    "rogue": {
+      "id": "rogue",
+      "title": "Rogue Game (پروژه بازی Rogue)",
+      "course": "Fundamentals of Programming (40153)",
+      "summary": "A 2D procedural dungeon-crawler game inspired by classic Rogue. Implemented map generation, rooms and corridors, player movement, combat mechanics, items/weapons, score tracking, and user authentication.",
+      "stack": ["C", "ncurses", "Git"],
+      "repo": "https://github.com/alirezarasooli/Rogue_Project",
+      "additional_repo": "FundamentalOfProgramming-SUT-2024/fop2024-project-alirezarasooli",
+      "team_members": ["Individual Project (Alireza Rasooli)"],
+      "visibility": "public"
+    },
+    "stardew_valley": {
+      "id": "stardew_valley",
+      "title": "Stardew Valley Clone (پروژه بازی Stardew Valley)",
+      "course": "Advanced Programming (40244)",
+      "summary": "A team-based recreation of the farming RPG Stardew Valley built for the Advanced Programming course (Group 37). Includes farming mechanics, inventory management, time/weather cycles, NPC interactions, and object-oriented architecture.",
+      "stack": ["Java", "OOP", "LibGDX / JavaFX", "Git", "GitHub Classroom"],
+      "repo": "https://github.com/advanced-programming-sut-2025/advanced-programming-phase-1-group-37",
+      "team_members": ["Alireza Rasooli", "Armin Farsi", "Kianush Ghannad Dezfuli"],
+      "visibility": "public"
+    }
+  },
+  "capabilities": [
+    "answer_from_record: Answer questions strictly using public fields in record.json (project summaries, reading suggestions, job fit analysis).",
+    "answer_from_api: Fetch live public GitHub profile & repository metadata via GitHub REST API or academic papers via Crossref/OpenAlex API.",
+    "ask_clarification: Ask exactly one clarifying question when a visitor's request is ambiguous (e.g., asking about 'your project' without naming Rogue or Stardew Valley, or asking for job fit without specifying the role).",
+    "refuse_unpublished_fact: Refuse to disclose private or missing information (course grades, GPA, student ID, phone number, email, deployment dates, salaries, or unrecorded employers).",
+    "out_of_scope: Decline requests outside the page's authority (sending emails, booking meetings, speaking on behalf of Sharif University, or general trivia unrelated to Alireza)."
+  ],
+  "limits": {
+    "authority_guardrails": [
+      "May ONLY talk about Alireza Rasooli's public courses, projects, and live GitHub API data.",
+      "May NOT send emails, messages, or book meetings/interviews.",
+      "May NOT speak officially on behalf of Sharif University of Technology.",
+      "May NOT reveal course grades, GPA, class ranks, student ID, phone number, or personal email.",
+      "May NOT invent employers, work history, project deployment dates, or skills not present in record.json."
+    ],
+    "known_missing_facts": [
+      "Course grades and GPA (kept confidential)",
+      "Phone number, home address, and personal contact details",
+      "Commercial work experience / past employers",
+      "Project deployment dates and production metrics"
+    ]
+  }
+}
